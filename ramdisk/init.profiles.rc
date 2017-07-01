@@ -79,7 +79,7 @@ on property:persist.spectrum.profile=1
    # Frequency values
    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 384000
    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1708800
-   write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 633600
+   write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 384000
    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq 2054400
    # Force all cores online
    write /sys/module/msm_performance/parameters/max_cpus "-1:-1"
@@ -97,7 +97,7 @@ on property:persist.spectrum.profile=1
    write /sys/devices/system/cpu/cpu0/cpufreq/flash/use_sched_load 0
    write /sys/devices/system/cpu/cpu0/cpufreq/flash/max_freq_hysteresis 80000
    write /sys/devices/system/cpu/cpu0/cpufreq/flash/fastlane 1
-   write /sys/devices/system/cpu/cpu0/cpufreq/flash/fastlane_threshold 60
+   write /sys/devices/system/cpu/cpu0/cpufreq/flash/fastlane_threshold 55
    write /sys/devices/system/cpu/cpu0/cpufreq/flash/powersave_bias 0
    write /sys/devices/system/cpu/cpu0/cpufreq/flash/ignore_hispeed_on_notif 0
    write /sys/devices/system/cpu/cpu0/cpufreq/flash/fast_ramp_down 0
@@ -116,7 +116,7 @@ on property:persist.spectrum.profile=1
    write /sys/devices/system/cpu/cpu4/cpufreq/flash/use_sched_load 0
    write /sys/devices/system/cpu/cpu4/cpufreq/flash/max_freq_hysteresis 80000
    write /sys/devices/system/cpu/cpu4/cpufreq/flash/fastlane 1
-   write /sys/devices/system/cpu/cpu4/cpufreq/flash/fastlane_threshold 70
+   write /sys/devices/system/cpu/cpu4/cpufreq/flash/fastlane_threshold 75
    write /sys/devices/system/cpu/cpu4/cpufreq/flash/powersave_bias 0
    write /sys/devices/system/cpu/cpu4/cpufreq/flash/ignore_hispeed_on_notif 0
    write /sys/devices/system/cpu/cpu4/cpufreq/flash/fast_ramp_down 0
@@ -124,7 +124,7 @@ on property:persist.spectrum.profile=1
    # Input boost values
    write /sys/module/cpu_boost/parameters/input_boost_enabled 1
    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1248000 1:1248000 2:1248000 3:1248000 4:768000 5:768000 6:768000 7:768000"
-   write /sys/module/cpu_boost/parameters/input_boost_ms 80
+   write /sys/module/cpu_boost/parameters/input_boost_ms 100
    # Other values
    write /sys/module/msm_performance/parameters/touchboost 0
    write /sys/class/leds/lcd-backlight/max_brightness 255
